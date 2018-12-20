@@ -6,7 +6,7 @@
  ******************************************************************************/
 package com.seyupo.activities;
 
-import com.seyupo.PreyVerify;
+import com.seyupo.SeyupoVerify;
 
 import android.app.Activity;
 import android.content.Context;
@@ -55,7 +55,7 @@ public class LoginActivity extends Activity {
 
     private void startup() {
         Intent intent = null;
-        boolean ready=SeyupoConfig.getPreyConfig(this).getProtectReady();
+        boolean ready=SeyupoConfig.getSeyupoConfig(this).getProtectReady();
         if (isThisDeviceAlreadyRegisteredWithSeyupo()) {
             SeyupoVerify.getInstance(this);
         }
